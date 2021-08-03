@@ -10,14 +10,6 @@ CREATE TABLE IF NOT EXISTS public.country
     PRIMARY KEY (country_id)
 );
 
-CREATE TABLE IF NOT EXISTS public.club
-(
-    club_id serial NOT NULL,
-    club "char" NOT NULL,
-    league "char" NOT NULL,
-    PRIMARY KEY (club_id)
-);
-
 CREATE TABLE IF NOT EXISTS public."position"
 (
     position_id "char" NOT NULL,
@@ -33,10 +25,9 @@ CREATE TABLE IF NOT EXISTS public.player
     country_id integer NOT NULL,
     squad_number integer NOT NULL,
     position_id "char" NOT NULL,
-    club_id integer NOT NULL,
+    club "char" NOT NULL,
     PRIMARY KEY (player_id),
 	FOREIGN KEY (country_id) REFERENCES country(country_id) ON DELETE CASCADE,
-	FOREIGN KEY (club_id) REFERENCES club(club_id) ON DELETE CASCADE,
 	FOREIGN KEY (position_id) REFERENCES "position"(position_id) ON DELETE CASCADE
 );
 
