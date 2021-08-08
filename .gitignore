@@ -4,3 +4,4 @@ data/.env
 src/.env
 src/__pycache__
 src/utils/__pycache__
+src/controllers/__pycache__

@@ -23,8 +23,6 @@ def search_matches_for_stage():
         single_match = i[0]
         matches.append(single_match)
 
-    print(matches)
-
     data = {
         "status": "OK",
         "matches": matches
