@@ -2,6 +2,8 @@
 .env
 data/.env
 src/.env
+
 src/__pycache__
 src/utils/__pycache__
 src/controllers/__pycache__
+front/__pycache__
