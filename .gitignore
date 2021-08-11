@@ -2,6 +2,7 @@
 .env
 data/.env
 src/.env
+front/.env
 
 src/__pycache__
 src/utils/__pycache__
