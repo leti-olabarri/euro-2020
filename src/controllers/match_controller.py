@@ -10,7 +10,7 @@ def search_all_matches():
     query = f"""
         SELECT row_to_json(matches)
         FROM (
-            SELECT stage, date, team_name_home, team_home_score, team_name_away, team_away_score
+            SELECT *
             FROM "match"
         ) matches
     """
