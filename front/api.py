@@ -29,6 +29,7 @@ def find_players(parameters):
     url = f"{API_URI}/player/stats?" + conditions
     res = requests.get(url).json()
     res = res["players"]
+    
     if len(res) == 0:
         sorry = "There are no players which such stats"
         return sorry
@@ -66,3 +67,8 @@ def find_club_players(club):
     table = HTML(df.to_html(
         escape=False, formatters=dict(picture=path_to_image_html)))
     return table
+
+def find_all_venues():
+    res = requests.get(f"{API_URI}/venues").json()
+    res = res["venues"]
+    return res
