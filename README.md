@@ -7,8 +7,6 @@ This is a little project done for the Big Data and Machine Learning bootcamp of 
 
 ## Abstract
 
-***
-
 Here is all the necessary code to create a Euro Cup 2020 database in Postgresql, an api in Flask and a frontend with Streamlit. The resulting webapp displays:
 - A map with the locations of all the venues that hosted the final phase matches
 - A tool to know what players had each club participating on this tournament
@@ -17,8 +15,6 @@ Here is all the necessary code to create a Euro Cup 2020 database in Postgresql,
 
 
 ## Quickstart
-
-***
 
 1. Clone the repository: `git clone https://github.com/leti-olabarri/euro-2020.git`
 2. Define all the necessary environmental variables (see below)
@@ -29,15 +25,11 @@ Here is all the necessary code to create a Euro Cup 2020 database in Postgresql,
 
 ## Data used
 
-***
-
 - Dataset from Kaggle: [UEFA Euro Cup 2020](https://www.kaggle.com/mcarujo/euro-cup-2020), by [Marco Carujo](https://www.kaggle.com/mcarujo), for all the matches
 - Data scrapped from [UEFA Euro Cup 2020](https://www.uefa.com/uefaeuro-2020/) official website, for data about players, coachs and venues
 
 
 ## Technologies used
-
-***
 
 ### Language
 
@@ -67,8 +59,6 @@ Again, you can check the libraries in the [requirements.txt](front/requirements.
 
 ## Required environmental variables
 
-***
-
 ### Database
 
 - `POSTGRES`: just email me if you really want this credential
@@ -84,8 +74,6 @@ Again, you can check the libraries in the [requirements.txt](front/requirements.
 
 
 ## API ENDPOINTS
-
-***
 
 ### CLUBS
 - [GET] "/clubs": name of all the clubs that had players on the tournament
@@ -140,8 +128,6 @@ Again, you can check the libraries in the [requirements.txt](front/requirements.
 
 
 ## TABLES' RELATIONSHIPS
-
-***
 
 Here there is a picture of the tables' relationships, whether you have that information on the [schema.pgerd](data/schema.pgerd) file
 
