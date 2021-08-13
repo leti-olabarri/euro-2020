@@ -1,6 +1,6 @@
 # UEFA Euro Cup 2020 Big Data project
 
-![UEFA Euro 2020 logo](https://w1.pngwing.com/pngs/263/356/png-transparent-euro-logo-uefa-euro-2020-uefa-euro-2020-qualifying-uefa-euro-2016-uefa-nations-league-england-national-football-team-spain-national-football-team-quadrennial.png)
+![UEFA Euro 2020 logo](public/logo.png)
 
 This is a little project done for the Big Data and Machine Learning bootcamp of [Core Code School](https://www.corecode.school/)
 
