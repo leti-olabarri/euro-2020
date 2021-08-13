@@ -17,7 +17,7 @@ Here is all the necessary code to create a Euro Cup 2020 database in Postgresql,
 ## Quickstart
 
 1. Clone the repository: `git clone https://github.com/leti-olabarri/euro-2020.git`
-2. Define all the necessary environmental variables ([see below(https://github.com/leti-olabarri/euro-2020/tree/feature/docs#required-environmental-variables)])
+2. Define all the necessary environmental variables ([see below](https://github.com/leti-olabarri/euro-2020/tree/feature/docs#required-environmental-variables))
 3. Install the libraries defined in the `front` and `src` folders (it is better to install them in different environments, just in case streamlit gives problems)
 4. In separate terminal windows and from the root of the project, run `python src/server.py` (to run the api) and `streamlit run front/dashboard.py`
 4. ENJOY!
