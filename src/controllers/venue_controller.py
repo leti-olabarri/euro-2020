@@ -10,7 +10,7 @@ def search_all_venues():
     query = f"""
         SELECT row_to_json(venues)
         FROM (
-            SELECT venue.name, capacity, ST_AsText(geom), ST_AsEwkt(geom), ST_X(geom), ST_Y(geom), city, country
+            SELECT venue.name, capacity, ST_AsText(geom), ST_AsEwkt(geom), ST_X(geom), ST_Y(geom), city, country, picture
             FROM venue
         ) venues
     """

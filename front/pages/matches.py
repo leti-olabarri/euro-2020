@@ -11,10 +11,10 @@ def matches():
     not_columns = ["match_id", "duels_won_home", "duels_won_away", "pens"]
     for i in not_columns:
         table = table.drop(i, axis="columns")
-
     corr = table.corr()
     
-    st.write(corr)
+    st.dataframe(corr)
+    st.caption("Correlation between the most relevant statistics of all the UEFA Euro 2020")
 
     st.markdown("I know what you are thinking: 'Too many numbers...' Fair enough.")
 

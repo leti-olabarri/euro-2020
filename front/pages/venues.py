@@ -6,8 +6,12 @@ import folium
 
 def venues():
 
-    m = folium.Map(location=[48.224082825962476,
-                   46.90666960745771], zoom_start=3)
+    st.title("Venues")
+
+    st.markdown("For pandemic times, social distance has become very important. UEFA people were very farsighted when they decided to host this last Euro 2020 in twelve different stadiums. Click on every one to have more information")
+
+    m = folium.Map(location=[51.49223882457262,
+                   31.218865188806557], zoom_start=3)
 
     response = find_all_venues()
     for i in response:
@@ -15,9 +19,10 @@ def venues():
         latitude = i["st_y"]
         name = i["name"]
         capacity = i["capacity"]
-        popup = f"<b>{name}</b><br/><p>Capacity: {capacity} spectators</p><img src='https://static2-sevilla.abc.es/media/deportes/2021/04/19/s/estadio-cartuja-sevilla-U86314661137dLF-620x349@abc.jpg' width=200/>"
+        picture = i["picture"]
+        popup = f"<b>{name}</b><br/><p>Capacity: {capacity} spectators</p><img src={picture} width=200/>"
         folium.Marker(
-            [latitude, longitude],icon=folium.Icon(color='blue', icon='fa-futbol-o', prefix='fa'), popup=f"{popup}", tooltip=name
+            [latitude, longitude], icon=folium.Icon(color='blue', icon='fa-futbol-o', prefix='fa'), popup=f"{popup}", tooltip=name
         ).add_to(m)
 
     folium_static(m)
