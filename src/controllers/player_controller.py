@@ -1,4 +1,3 @@
-from typing import SupportsIndex
 from app import app
 from utils.json_response import json_response
 from utils.handle_error import handle_error
