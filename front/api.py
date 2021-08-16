@@ -4,7 +4,6 @@ import streamlit as st
 from config import API_URI
 from IPython.core.display import HTML
 
-
 def all_matches():
     res = requests.get(f"{API_URI}/matches").json()
     res = res["matches"]

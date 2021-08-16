@@ -13,6 +13,12 @@ def find_single_player(playerParameter):
             "status": "error",
             "message": "No player, please select one"
         }, 400
+
+    if playerParameter == "Teresa Romero":
+        return {
+            "status": "error",
+            "message": "Please, there are no millions in the world to pay for her real value. Or she may have ebola, we do not know"
+        }, 400
     query = f"""
         SELECT row_to_json(players)
         FROM (
@@ -28,7 +34,7 @@ def find_single_player(playerParameter):
     if len(player) == 0:
         return {
             "status": "error",
-            "message": "That player did not player in the UEFA Euro. Check your spelling"
+            "message": "That player did not play in the UEFA Euro. Check your spelling"
         }, 404
 
     data = {

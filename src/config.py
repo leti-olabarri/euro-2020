@@ -1,7 +1,9 @@
 import os
-import dotenv
 
-dotenv.load_dotenv()
+# Uncomment all these to use it in your localhost
 
-PORT = int(os.getenv("PORT"))
-POSTGRES = os.getenv("POSTGRES")
+#import dotenv
+
+#dotenv.load_dotenv()
+
+#POSTGRES = os.getenv("POSTGRES")
